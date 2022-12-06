@@ -3,10 +3,10 @@
 const string solution = "The solution to the {0} puzzle is {1}.";
 
 // Startup a puzzle
-IPuzzle puzzle = new Puzzle2();
+IPuzzle puzzle = new Puzzle3();
 
 // Set the name of the file to load
-string file = "day2";
+string file = "day3";
 
 // Solve the puzzles and output the solution
 Console.WriteLine(string.Format(solution, "first", puzzle.SolvePuzzle1(file)));

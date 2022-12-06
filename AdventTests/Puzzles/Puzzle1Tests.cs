@@ -9,7 +9,7 @@ namespace AdventTests.Puzzles
     internal class Puzzle1Tests : PuzzleTestBase<Puzzle1>
     {
         // Test that when the given file is run that
-        // is returns the expected highest number of
+        // it returns the expected highest number of
         // calories
         [Test]
         [TestCase("day1_sample", ExpectedResult = "24000")]
@@ -20,7 +20,7 @@ namespace AdventTests.Puzzles
         }
 
         // Test that when the given file is run that
-        // is returns the expected top 3 highest
+        // it returns the expected top 3 highest
         // number of calories
         [Test]
         [TestCase("day1_sample", ExpectedResult = "45000")]

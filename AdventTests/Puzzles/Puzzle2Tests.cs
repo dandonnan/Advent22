@@ -9,7 +9,7 @@ namespace AdventTests.Puzzles
     internal class Puzzle2Tests : PuzzleTestBase<Puzzle2>
     {
         // Test that when the given file is run that
-        // is returns the expected number of points
+        // it returns the expected number of points
         // from using the specified moves
         [Test]
         [TestCase("day2_sample", ExpectedResult = "15")]
@@ -20,7 +20,7 @@ namespace AdventTests.Puzzles
         }
 
         // Test that when the given file is run that
-        // is returns the expected number of points
+        // it returns the expected number of points
         // from using the specified outcomes
         [Test]
         [TestCase("day2_sample", ExpectedResult = "12")]
