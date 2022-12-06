@@ -3,6 +3,10 @@ namespace Advent.Puzzles
     using Advent.IO;
 
     // Day 1 Puzzle
+    // Fairly happy with how this one turned out
+    // although I'm now not sure if it is calory
+    // or calorie - the second looks more correct
+    // but still feels wrong
     internal class Puzzle1 : IPuzzle
     {
         // Find the amount of calories held by the elf that
