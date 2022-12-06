@@ -7,7 +7,7 @@ namespace Advent.IO
         public static string ReadInputFile(string fileName)
         {
             // Set the filepath to the Input directory
-            string file = $"Input//{fileName}.txt";
+            string file = $"{AppDomain.CurrentDomain.BaseDirectory}//..//..//..//..//Input//{fileName}.txt";
 
             // Open the file
             using (StreamReader streamReader = new StreamReader(file))
@@ -24,7 +24,7 @@ namespace Advent.IO
             List<string> lines = new List<string>();
 
             // Set the filepath to the Input directory
-            string file = $"Input//{fileName}.txt";
+            string file = $"{AppDomain.CurrentDomain.BaseDirectory}//..//..//..//..//Input//{fileName}.txt";
 
             // Open the file
             using (StreamReader streamReader = new StreamReader(file))

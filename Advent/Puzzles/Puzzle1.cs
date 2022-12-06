@@ -11,10 +11,10 @@ namespace Advent.Puzzles
     {
         // Find the amount of calories held by the elf that
         // has the most calories
-        public string SolvePuzzle1()
+        public string SolvePuzzle1(string file)
         {
             // Get the total amount of calories for each elf
-            List<int> totals = GetCalorieTotals();
+            List<int> totals = GetCalorieTotals(file);
 
             // Order the totals in descending order, and grab
             // the first one (this will be the highest)
@@ -27,10 +27,10 @@ namespace Advent.Puzzles
 
         // Find the total calories of the three elves with
         // the highest calorie totals
-        public string SolvePuzzle2()
+        public string SolvePuzzle2(string file)
         {
             // Get the total amount of calories for each elf
-            List<int> totals = GetCalorieTotals();
+            List<int> totals = GetCalorieTotals(file);
 
             // Order the totals in descending order, then grab
             // the first three (these will be the highest)
@@ -53,13 +53,13 @@ namespace Advent.Puzzles
         }
 
         // Get a list of the total number of calories for each elf
-        private List<int> GetCalorieTotals()
+        private List<int> GetCalorieTotals(string file)
         {
             // Create a blank totals list
             List<int> totals = new List<int>();
 
             // Get all the lines from the file
-            List<string> input = FileParser.ReadInputFileAsLines("day1_1");
+            List<string> input = FileParser.ReadInputFileAsLines(file);
 
             // Create a tracker for the current total
             int currentTotal = 0;
@@ -90,6 +90,14 @@ namespace Advent.Puzzles
                 }
             }
 
+            // If the end of the file has been reached
+            // and the last total has not been added
+            if (currentTotal > 0)
+            {
+                // Add it
+                totals.Add(currentTotal);
+            }
+
             // Return the list
             return totals;
         }
@@ -99,7 +107,7 @@ namespace Advent.Puzzles
         private string SolvePuzzle1_Original()
         {
             // Get all calories
-            List<string> input = FileParser.ReadInputFileAsLines("day1_1");
+            List<string> input = FileParser.ReadInputFileAsLines("day1");
             
             int highestTotal = 0;
             int currentTotal = 0;

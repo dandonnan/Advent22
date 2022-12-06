@@ -30,10 +30,10 @@ namespace Advent.Puzzles
 
         // Work out how many points will be earned playing
         // Rock, Paper, Scissors against the elves
-        public string SolvePuzzle1()
+        public string SolvePuzzle1(string file)
         {
             // Get a list of hands from the file
-            List<string> hands = FileParser.ReadInputFileAsLines("day2_1");
+            List<string> hands = FileParser.ReadInputFileAsLines(file);
 
             // Create a tracker for the number of points
             int points = 0;
@@ -51,10 +51,10 @@ namespace Advent.Puzzles
 
         // Work out how many points will be earned when
         // deliberately winning / drawing / losing
-        public string SolvePuzzle2()
+        public string SolvePuzzle2(string file)
         {
             // Get a list of hands from the file
-            List<string> hands = FileParser.ReadInputFileAsLines("day2_1");
+            List<string> hands = FileParser.ReadInputFileAsLines(file);
 
             // Create a tracker for the number of points
             int points = 0;

@@ -2,4 +2,7 @@
 
 Working through solutions to [Advent of Code 2022](https://adventofcode.com/).
 
-This is a .NET6 (C#) console application.
+There is a .NET6 (C#) console application which solves
+the puzzles, and an NUnit test project to verify the
+outcomes.
+
