@@ -3,6 +3,13 @@ namespace Advent.Puzzles
     using Advent.IO;
 
     // Day 3 Puzzle
+    // I wanted to try and combine the get priorities
+    // methods, but with puzzle 1 splitting each line
+    // into 2 and puzzle 2 grouping them in threes,
+    // it was probably better to keep them separate 
+    // instead of muddying the logic. The final
+    // foreach in each of those methods could be
+    // pulled out into a seperate method though.
     internal class Puzzle3 : IPuzzle
     {
         // All the characters in the alphabet
